@@ -1,0 +1,1052 @@
+@media screen {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .headerpage {
+        display: flow-root;
+        background-color: #1ABC9C;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        padding: 12px;
+        /* max-width: 1370px; */
+        max-width: auto;
+        width: 100%;
+        max-height: 40px;
+        height: 100%;
+        left: 0px;
+        color: #cce9c1;
+        display: flex;
+    }
+
+    body {
+        max-width: 1300px;
+        width: 100%;
+        height: fit-content;
+        background: #16A085;
+        padding: 0 10px;
+    }
+
+    /* option */
+    .options .optionInfo {
+        background-color: #196F3D;
+        position: relative;
+        display: inline-block;
+    }
+
+    .options .optionInfo .optionBtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 5px;
+        font-size: 16px;
+        border: none;
+    }
+
+    .optionInfo .optionInfoContent {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        bottom: 50px;
+        z-index: 1;
+    }
+
+    .optionInfo .optionInfoContent a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .optionInfo .optionInfoContent a:hover {
+        background-color: #ccc
+    }
+
+    .optionInfo:hover .optionInfoContent {
+        display: block;
+    }
+
+    .options .optionInfo:hover .optionBtn {
+        background-color: #2980B9;
+    }
+
+    /* form.php */
+    .container {
+        display: flexbox;
+        max-width: 550px;
+        width: 100%;
+        background-color: #45B39D;
+        margin: 60px auto;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+    }
+
+    .container .title {
+        font-size: 24px;
+        font-weight: 1000;
+        margin-bottom: 10px;
+        color: #21618C;
+        text-align: center;
+
+    }
+
+    .container .output_field {
+        font-size: 22px;
+        font-weight: 1000;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    .container .input_field {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .container .input_field #sysname {
+        background-color: #51b8b8;
+
+    }
+
+
+
+
+    .container .input_field label {
+        padding-right: 10px;
+        left: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .container .input_field .input {
+
+        max-width: 350px;
+        width: 100%;
+        outline: none;
+        border: 1px solid rgb(195, 236, 238);
+        font-size: 14px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+        text-transform: capitalize;
+
+    }
+
+
+
+    .container .input_field .selectbox {
+        position: relative;
+        max-width: 350px;
+        width: 100%;
+        height: 37px;
+    }
+
+    .container .input_field .selectbox select {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        padding: 8px 10px;
+        border: 1px solid rgb(195, 236, 238);
+        border-radius: 3px;
+        outline: none;
+    }
+
+    .container .input_field .selectbox::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        pointer-events: none;
+        border: 8px solid black;
+        border-color: rgb(195, 236, 238) transparent transparent transparent;
+    }
+
+    .container .input_field .input:focus {
+        border: 1px solid rgb(169, 180, 10);
+    }
+
+    .container .input_field select:focus {
+        border: 1px solid rgb(169, 180, 10);
+    }
+
+    .container .input_field .btn {
+
+        width: 100%;
+        padding: 8px 10px;
+        margin: 10px 10px;
+        font-size: 15px;
+        border: 2px solid rgb(10, 207, 233);
+        border-radius: 5px;
+        background-color: rgba(8, 150, 119, 0.616);
+        cursor: pointer;
+
+    }
+
+    .container .input_field .btn:focus {
+        cursor: pointer;
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+    .container .input_field .btn:hover {
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+
+    .container .input_field:last-child {
+        margin-bottom: 5px;
+
+    }
+
+    #frmprint {
+        visibility: hidden;
+    }
+
+
+
+    /* login.php */
+    .container_login {
+        display: flow-root;
+        max-width: 400px;
+        width: 100%;
+        background-color: #45B39D;
+        margin: 100px auto;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+    }
+
+    .container_login .title_login {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #21618C;
+        text-align: center;
+    }
+
+    .container_login .form_login {
+        width: 100%;
+    }
+
+    .container_login .form_login .input_field_login {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .container_login .form_login .input_field_login label {
+        margin-right: 10px;
+        margin: auto;
+        width: 100px;
+        font-size: 17px;
+    }
+
+    .container_login .form_login .input_field_login .input_login {
+        width: 100%;
+        outline: none;
+        border: 1px solid rgb(195, 236, 238);
+        font-size: 14px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
+
+    .container_login .form_login .input_field_login .input_login:focus {
+        border: 1px solid rgb(169, 180, 10);
+    }
+
+    .container_login .form_login .input_field_login .btn_login {
+
+        width: 100%;
+        padding: 8px 10px;
+        margin: 10px 10px;
+        margin-block-end: -50px;
+        font-size: 15px;
+        border: 2px solid rgb(10, 207, 233);
+        border-radius: 5px;
+        background-color: rgba(8, 150, 119, 0.616);
+        cursor: pointer;
+
+    }
+
+    .container_login .form_login .input_field_login .btn_login:focus {
+        cursor: pointer;
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+    .container_login .form_login .input_field_login .btn:hover {
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+
+    .container_login .form_login .input_field_login:last-child {
+        margin-bottom: 15%;
+
+    }
+
+    /* home.php */
+    #containerhome {
+        display: flow-root;
+        max-width: 700px;
+        min-width: 540px;
+        width: 100%;
+        background-color: #45B39D;
+        margin: 7% auto;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+    }
+
+    #containerhome .titlehome {
+        margin-bottom: 1px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #21618C;
+        text-align: center;
+
+    }
+
+    #containerhome .parashome {
+        font-size: 14px;
+        font-weight: 200;
+        margin-bottom: auto;
+        text-align: initial;
+    }
+
+    #containerhome .img_home {
+        display: flex;
+        margin: 0;
+
+    }
+
+    #containerhome .img_img_home {
+
+        display: flow-root;
+        margin: 1px 16px;
+        max-width: 700px;
+        min-width: 540px;
+        max-height: 200px;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    /*contact.php*/
+    #container_contact {
+        max-width: 500px;
+        width: 100%;
+        background-color: #45B39D;
+        margin: 17% auto;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+        align-items: center;
+    }
+
+    /* signup.php*/
+    #container_signup {
+        max-width: 500px;
+        width: 100%;
+        max-height: 350px;
+        height: 100%;
+        background-color: #45B39D;
+        margin: 50px auto;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+    }
+
+    #container_signup .title_signup {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #21618C;
+        text-align: center;
+        border: 3px solid #196F3D;
+        border-radius: 50px;
+    }
+
+    #container_signup .form_signup {
+        width: 100%;
+    }
+
+    #container_signup .form_signup .input_field_signup {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    #container_signup .form_signup .input_field_signup label {
+        margin-right: 10px;
+        width: 200px;
+        font-size: 17px;
+    }
+
+    #container_signup .form_signup .input_field_signup .input_signup {
+        width: 100%;
+        outline: none;
+        border: 1px solid rgb(195, 236, 238);
+        font-size: 14px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
+
+    #container_signup .form_signup .input_field_signup .input_signup:focus {
+        border: 1px solid rgb(169, 180, 10);
+    }
+
+    #container_signup .form_signup .input_field_signup .btn_signup {
+
+        width: 100%;
+        padding: 8px 10px;
+        /* margin-block: 50px; */
+
+        margin: 10px 10px;
+        font-size: 15px;
+        border: 2px solid rgb(10, 207, 233);
+        border-radius: 5px;
+        background-color: rgba(8, 150, 119, 0.616);
+        cursor: pointer;
+    }
+
+    #container_signup .form_signup .input_field_signup .btn_signup:focus_signup {
+        cursor: pointer;
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+    #container_signup .form_signup .input_field_signup .btn_signup:hover {
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+
+    #container_signup .form_signup .input_field_signup:last-child {
+        margin-bottom: 10%;
+    }
+
+
+    /* infovisitor.php */
+    .container_table {
+        display: flow-root;
+        max-width: fit-content;
+        min-width: fit-content;
+        width: 100%;
+        height: 100%;
+        background-color: #45B39D;
+        margin: 50px auto;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+
+    }
+
+    .container_table .title_infov {
+        font-size: 24px;
+        font-weight: 1000;
+        margin-bottom: 5px;
+        color: #21618C;
+        text-align: center;
+    }
+
+
+    .container_table .exportfile {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #21618C;
+        text-align: center;
+    }
+
+    .table {
+        max-width: 670px;
+        min-width: 560px;
+        width: 100%;
+        border: 4px solid black;
+
+    }
+
+    .container_table .tbl_info {
+
+        padding: 5pxx;
+        text-align: center;
+
+    }
+
+    .container_table .tbl_info tr {
+        background-color: silver;
+        border: 2px solid rgba(71, 99, 80, 0.712);
+        border-collapse: collapse;
+        padding: 3px;
+    }
+
+    .container_table .tbl_info th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 3px;
+    }
+
+    .table th:hover {
+        cursor: pointer;
+    }
+
+    .back {
+        background-color: red;
+        margin-inline: 50%;
+    }
+
+    /* search_info.php */
+    .container_find {
+        display: flexbox;
+        max-width: 450px;
+        width: 100%;
+        background-color: #45B39D;
+        margin: 90px auto;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+        font-weight: 500;
+    }
+
+    .container_find .title_find {
+
+        display: flow-root;
+        font-size: 24px;
+        font-weight: 1000;
+        margin-bottom: 5px;
+        color: #21618C;
+        text-align: center;
+    }
+
+
+
+    .container_find .input_field {
+
+        width: 100%;
+        margin-block: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: baseline;
+
+    }
+
+    .container_find .input_field #sysnamesearch {
+        background-color: #51b8b8;
+    }
+
+    .container_find .input_field label {
+        padding-right: 2px;
+        margin: 5px 2px;
+        font-size: 16px;
+        align-items: baseline;
+    }
+
+    .container_find .input_field .input_field_input {
+        outline: none;
+        border: 1px solid rgb(195, 236, 238);
+        font-size: 18px;
+        padding: 5px 5px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+        text-transform: capitalize;
+    }
+
+    .container_find .divBanSelect {
+        width: 200px;
+        justify-content: right;
+    }
+
+    .container_find .divSelectBox {
+        position: relative;
+    }
+
+    .container_find .divSelectBox select {
+        max-width: 150px;
+        width: 100%;
+        font-weight: bold;
+    }
+
+    .container_find .overSelect {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .container_find #BanChBox {
+        max-width: 150px;
+        width: 100%;
+        display: none;
+        border: 2px solid #21618C;
+    }
+
+
+    .container_find #BanChBox label {
+        display: block;
+    }
+
+    .container_find #BanChBox label:hover {
+        background-color: #13ecda;
+    }
+
+    .container_find .find {
+        font-size: 18px;
+        border: 2px solid rgb(33, 107, 97);
+        border-radius: 5px;
+
+    }
+
+    .container_find .find .output_field {
+        margin: 10px auto;
+        font-size: 18px;
+    }
+
+
+    .container_find .find .output_field label {
+        margin: auto 10px;
+        padding-right: 10px;
+        font-size: 18px;
+        align-items: baseline;
+    }
+
+    .frmprint {
+        margin: 50px auto;
+        align-items: center;
+        justify-content: center;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .frmprint span {
+        justify-self: center;
+        font-size: 20px;
+
+    }
+
+    .frmprint .imgBCode {
+        height: 50px;
+        width: 200px;
+        margin: 10px;
+        padding: 5px 5px;
+    }
+
+
+
+    /* findbyany.php */
+    .container_find_any {
+        display: flexbox;
+        max-width: 600px;
+        width: 100%;
+        background-color: #45B39D;
+        margin: 60px auto;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+
+    }
+
+    .container_find_any .frmFind {
+        display: flexbox;
+        flex-direction: row;
+    }
+
+    .container_find_any .frmFind .title_find_any {
+        font-size: 24px;
+        font-weight: 1000;
+        margin-bottom: 10px;
+        color: #21618C;
+        text-align: center;
+
+    }
+
+    .container_find_any .frmFind .input_field_any {
+        max-width: 570px;
+        width: 100%;
+        display: flex;
+        box-direction: row;
+        border: 2px solid #21618C;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 10px auto;
+        align-items: center;
+
+    }
+
+
+    .container_find_any .frmFind .input_field_any .radioBtn {
+        justify-content: left;
+        padding-right: 5px;
+    }
+
+    .container_find_any .frmFind .input_field_any label {
+        padding-right: 5px;
+        font-weight: 500;
+    }
+
+    .container_find_any .frmFind .input_field_any .inputtxt {
+        max-width: 150px;
+        width: 100%;
+        outline: none;
+        border: 1px solid #7a5609;
+        font-size: 14px;
+        padding: 2px 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+    }
+
+    .container_find_any .frmFind .input_field_any .subbtn {
+
+        max-width: 90px;
+        width: 100%;
+        padding: 5px;
+        font-size: 12px;
+        border: 2px solid rgb(10, 207, 233);
+        border-radius: 5px;
+        background-color: rgba(8, 150, 119, 0.616);
+        cursor: pointer;
+    }
+
+    .container_find_any .frmFind .input_field_any .subbtn:focus {
+        cursor: pointer;
+        background-color: rgba(8, 150, 119, 0.616);
+        color: #f0f5ef;
+    }
+
+    .container_find_any .frmFind .input_field_any .subbtn:hover {
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+
+    .container_find_any .find_rec_txt {
+        max-width: 150px;
+        background-color: #45ccaa;
+        text-align: center;
+        margin: 10px 0;
+        padding: 5px;
+    }
+
+    .container_find_any .tbl_info_any {
+        max-width: 580px;
+        width: 100%;
+        display: flex;
+        background-color: #32b3ac;
+        margin: 4px -4px;
+        align-items: center;
+
+    }
+
+    .container_find_any .tbl_info_any .table {
+        max-width: 560px;
+        width: 100%;
+        margin-left: 4px;
+    }
+
+    .container_find_any .tbl_info_any .table thead tr {
+        border: 2px solid;
+        text-align: center;
+        margin: 1px;
+        background-color: #16A085;
+    }
+
+    .container_find_any .tbl_info_any .table tbody tr {
+        border: 2px solid;
+        background-color: rgb(108, 190, 223);
+        text-align: center;
+        margin: 1px;
+    }
+
+    .container_found_print {
+        max-width: 500px;
+        width: 100%;
+        background-color: #45B39D;
+        margin: 60px auto;
+        padding: 15px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+        text-align: center;
+    }
+
+    .container_found_print .chk_found_print {
+        font-size: 16px;
+        justify-content: center;
+    }
+
+
+    .container_found_print .btn_found_print {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .container_found_print .btn_found_print .btn {
+        font-size: 20px;
+        justify-content: center;
+        max-width: 150px;
+        width: 100%;
+        padding: 4px 4px;
+        margin: 10px 10px;
+        font-size: 17px;
+        border: 2px solid rgb(10, 207, 233);
+        border-radius: 5px;
+        background-color: rgba(8, 150, 119, 0.616);
+        cursor: pointer;
+    }
+
+    .container_found_print .btn_found_print .btn:focus {
+        cursor: pointer;
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+    .container_found_print .btn_found_print .btn:hover {
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+
+
+    .containerView {
+        display: flexbox;
+        max-width: 600px;
+        width: 100%;
+        background-color: #45B39D;
+        margin: 60px auto;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 1.5);
+    }
+
+
+
+
+    /* settign page's fields  */
+    .containerView #pageSetFrm #uiPageDiv {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: #1caaa3;
+        border: 3px solid #7a5609;
+        border-radius: 9px;
+    }
+
+    .containerView #pageSetFrm #uiPageDiv label {
+        padding-right: 8px;
+        margin: 5px 2px;
+        font-size: 12px;
+        align-items: baseline;
+    }
+
+
+
+    .containerView #pageSetFrm #uiPageDiv #fSetPage {
+        display: flexbox;
+        flex-direction: row-reverse;
+        border: 1px solid green;
+        max-width: 600px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .containerView #pageSetFrm #uiPageDiv #fSetPage input {
+        max-width: 60px;
+        font-size: 10px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .containerView #pageSetFrm #uiPageDiv #fSetPage select {
+        max-width: fit-content;
+        font-size: 10px;
+    }
+
+
+    /* for name setting */
+    .containerView #pageSetFrm #uiNameDiv {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: #1caaa3;
+        border: 3px solid #7a5609;
+        border-radius: 9px;
+    }
+
+
+    .containerView #pageSetFrm #uiNameDiv label {
+        padding-right: 8px;
+        margin: 5px 2px;
+        font-size: 12px;
+        align-items: baseline;
+    }
+
+    .containerView #pageSetFrm #uiNameDiv #fSetName {
+        display: flexbox;
+        flex-direction: row-reverse;
+        border: 1px solid green;
+        max-width: 600px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .containerView #pageSetFrm #uiNameDiv #fSetName input {
+        max-width: 60px;
+        max-height: 80px;
+        font-size: 10px;
+        padding: 2px;
+        margin: 2px;
+
+    }
+
+
+
+    .containerView #pageSetFrm #uiNameDiv #fSetName select {
+        max-width: fit-content;
+        font-size: 10px;
+    }
+
+    /* for designation setting */
+    .containerView #pageSetFrm #uiDesDiv {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: #1caaa3;
+        border: 3px solid #7a5609;
+        border-radius: 9px;
+    }
+
+    .containerView #pageSetFrm #uiDesDiv label {
+        padding-right: 8px;
+        margin: 5px 2px;
+        font-size: 12px;
+        align-items: baseline;
+    }
+
+    .containerView #pageSetFrm #uiDesDiv #fSetDes {
+        display: flexbox;
+        flex-direction: row-reverse;
+        border: 1px solid green;
+        max-width: 600px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .containerView #pageSetFrm #uiDesDiv #fSetDes input {
+        max-width: 60px;
+        font-size: 10px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .containerView #pageSetFrm #uiDesDiv #fSetDes select {
+        max-width: fit-content;
+        font-size: 10px;
+    }
+
+
+    /* for company setting */
+    .containerView #pageSetFrm #uiComDiv {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: #1caaa3;
+        border: 3px solid #7a5609;
+        border-radius: 9px;
+    }
+
+    .containerView #pageSetFrm #uiComDiv label {
+        padding-right: 8px;
+        margin: 5px 2px;
+        font-size: 12px;
+        align-items: baseline;
+    }
+
+    .containerView #pageSetFrm #uiComDiv #fSetCom {
+        display: flexbox;
+        flex-direction: row-reverse;
+        border: 1px solid green;
+        max-width: 600px;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .containerView #pageSetFrm #uiComDiv #fSetCom input {
+        max-width: 60px;
+        font-size: 10px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .containerView #pageSetFrm #uiComDiv #fSetCom select {
+        max-width: fit-content;
+        font-size: 10px;
+    }
+
+
+    /* for barcode image setting */
+    .containerView #pageSetFrm #uiImgDiv {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: #1caaa3;
+        border: 3px solid #7a5609;
+        border-radius: 9px;
+    }
+
+    .containerView #pageSetFrm #uiImgDiv label {
+        padding-right: 8px;
+        margin: 5px 2px;
+        font-size: 12px;
+        align-items: baseline;
+    }
+
+    .containerView #pageSetFrm #uiImgDiv #fSetImg {
+        display: flexbox;
+        flex-direction: row-reverse;
+        border: 1px solid green;
+        max-width: 600px;
+        width: 100%;
+        padding: 5px;
+    }
+
+
+
+    .containerView #pageSetFrm #uiImgDiv #fSetImg input {
+        max-width: 60px;
+        font-size: 10px;
+        padding: 2px;
+        margin: 2px;
+    }
+
+    .containerView #pageSetFrm #uiImgDiv #fSetImg select {
+        max-width: fit-content;
+        font-size: 10px;
+    }
+
+
+    .containerView #pageSetFrm .btnDiv {
+        display: flex;
+        flex-direction: row;
+        padding: 1px;
+        margin-bottom: 10px;
+        background-color: #1caaa3;
+    }
+
+    .containerView #pageSetFrm .btnDiv .btnFSet {
+
+        width: 100%;
+        padding: 8px 10px;
+        margin: 10px 10px;
+        font-size: 15px;
+        border: 2px solid #0daeee;
+        border-radius: 5px;
+        background-color: #208580;
+        cursor: pointer;
+
+    }
+
+    .containerView #pageSetFrm .btnDiv .btnFSet:hover {
+        background-color: rgba(3, 84, 109, 0.616);
+    }
+
+}

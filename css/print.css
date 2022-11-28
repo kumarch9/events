@@ -1,0 +1,59 @@
+@page {
+    size: 101.6mm 152.4mm;
+}
+
+@media print {
+    html,
+    body {
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .frmprint {
+        display: contents;
+        
+    }
+
+    .frmprint .name {
+        font-size: 20px;
+        color: green;
+        margin-top: 1px;
+        margin-left: 250px;
+        text-transform: capitalize;
+        text-align:unset;
+    }
+
+    .frmprint .des {
+        display: contents;
+        margin-top: 1px;
+        margin-left: 250px;
+        font-size: 24px;
+        color: green;
+        text-transform: capitalize;
+        text-align: unset;
+    }
+
+    .frmprint .comp {
+        display: contents;
+        margin-top: 1px;
+        margin-left: 250px;
+        font-size: 20px;
+        color: rgb(193, 212, 16);
+        text-transform: capitalize;
+        text-align: unset;
+
+    }
+
+    .frmprint .divImg {
+        display: contents;
+        margin-top: 400px;
+        margin-left: 250px;
+       justify-content: unset;
+    }
+
+    .frmprint .divImg .imgBCode {
+        image-resolution: 300dpi;
+        border: 0px solid;
+    }
+
+}
