@@ -1,0 +1,36 @@
+// start at home.php page
+digraph {
+    node [width = 1; height = 0.5; fontsize = 16;];
+    edge [arrowhead = open;];
+    rankdir = LR;
+    
+    subgraph cluster_event_app {
+        home [style = filled;shape = rect;color = cornflowerblue;];
+        reg_visitor [style = filled;shape = rect;color = cornflowerblue;];
+        info_visitor [style = filled;shape = rect;color = cornflowerblue;];
+        b_scan [style = filled;shape = rect;color = cornflowerblue;];
+        search [style = filled;shape = rect;color = cornflowerblue;];
+        printset [style = filled;shape = rect;color = cornflowerblue;];
+        cntact [style = filled;shape = rect;color = cornflowerblue;];
+        signup [shape = Mdiamond;style = filled;color = cornflowerblue;tooltip = "1. must signup then login";];
+        login [shape = Mdiamond;style = filled;color = cornflowerblue;tooltip = "2. must login then access all";];
+        database [shape = cylinder;style = filled;color = "#0da7c2";];
+        signup -> login;
+        login -> reg_visitor;
+        login -> info_visitor ;
+        login -> b_scan;
+        login -> search;
+        login -> printset;
+        search -> print_badge;
+        b_scan -> scan_db;
+        printset -> set_db[dir=both];
+        reg_visitor -> v_info;
+        v_info -> database;
+        v_info -> print_badge;
+        
+        database -> info_visitor [tailport = s;];
+        database -> b_scan[tailport = n;];
+        database -> search[tailport = s;];
+        database -> printset[tailport = n;];
+    }
+}
